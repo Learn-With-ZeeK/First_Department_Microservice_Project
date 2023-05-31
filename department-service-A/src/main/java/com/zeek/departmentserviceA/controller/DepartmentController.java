@@ -47,8 +47,8 @@ public class DepartmentController {
 		// http://localhost:8080/departments/1---------- GET request on Postman App
 			
 		@GetMapping("{id}")
-			public ResponseEntity<Department> getDepartmentById(@PathVariable("id") long departmentId){
-				return new ResponseEntity<Department>(HttpStatus.OK);
+			public Department getDepartmentById(@PathVariable("id") long departmentId){
+			 return departmentService.findDepartmentById(departmentId);
 		}
 
 }
