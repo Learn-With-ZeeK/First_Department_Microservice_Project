@@ -11,8 +11,8 @@ public class UserServiceAApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(UserServiceAApplication.class, args);
 	}
-	@Bean
-	public RestTemplate restTemplate() {
+	 @Bean
+	 public RestTemplate restTemplate() {
 		return new RestTemplate();
-	}
+	 }
 }
