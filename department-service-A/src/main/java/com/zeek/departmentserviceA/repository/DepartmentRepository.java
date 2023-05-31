@@ -6,4 +6,6 @@ import com.zeek.departmentserviceA.entity.Department;
 
 public interface DepartmentRepository extends JpaRepository<Department, Long> {
 
+  Department findByDepartmentId(Long departmentId);
+  
 }
