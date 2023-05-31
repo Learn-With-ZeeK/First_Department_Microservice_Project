@@ -31,9 +31,8 @@ private DepartmentRepository departmentRepository;
 	}
 
 	@Override
-	public Optional<Department> getDepartmentById(long id) { 
-		return departmentRepository.findById(id);
-	
+	public Department findDepartmentById(Long departmentId) {
+		return departmentRepository.findByDepartmentId(departmentId);
 	}
 
 }
